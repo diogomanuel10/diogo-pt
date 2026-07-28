@@ -38,6 +38,15 @@ export default function Work() {
                 </h3>
                 <p className="sighting-line">{project.sighting}</p>
 
+                <figure className="sighting-shot">
+                  {project.shot ? (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img src={project.shot} alt={`Captura de ${project.title}`} />
+                  ) : (
+                    <span className="sighting-shot-empty mono">Captura em breve</span>
+                  )}
+                </figure>
+
                 {project.text.map((paragraph, p) => (
                   <p className="sighting-text" key={p}>
                     {paragraph}

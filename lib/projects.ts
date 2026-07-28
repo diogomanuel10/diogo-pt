@@ -18,6 +18,11 @@ export type Project = {
   animal: AnimalId;
   /** Uma linha que liga o animal ao que o projeto faz. */
   sighting: string;
+  /**
+   * Captura de ecrã do projeto (caminho em /public, ex.: "/shots/rumia.png").
+   * Enquanto não houver, o avistamento mostra um placeholder.
+   */
+  shot?: string;
 };
 
 /**
