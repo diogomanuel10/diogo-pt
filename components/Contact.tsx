@@ -6,13 +6,13 @@ export default function Contact() {
       <section className="section wrap contact station" id="contacto">
         <Reveal>
           <div className="section-head">
-            <span className="mono">Fim da linha</span>
+            <span className="mono">Paragem 03 · Fim da linha</span>
             <h2>Contacto</h2>
           </div>
         </Reveal>
 
         <Reveal>
-          <h2 className="contact-call">
+          <p className="contact-call">
             Tens um problema
             <br />
             que vale a pena
@@ -22,7 +22,7 @@ export default function Contact() {
             <a className="big" href="mailto:ola@exemplo.pt">
               Escreve-me →
             </a>
-          </h2>
+          </p>
         </Reveal>
       </section>
 

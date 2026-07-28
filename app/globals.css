@@ -25,9 +25,10 @@
   --rail-bed: rgba(242, 228, 207, 0.14);
   --panel: rgba(20, 16, 10, 0.72);
 
-  --display: "Syne", system-ui, sans-serif;
-  --body: "Inter Tight", system-ui, sans-serif;
-  --mono: "JetBrains Mono", ui-monospace, monospace;
+  /* As famílias vêm de next/font (ver app/layout.tsx); o fallback mantém-se. */
+  --display: var(--font-display), "Syne", system-ui, sans-serif;
+  --body: var(--font-body), "Inter Tight", system-ui, sans-serif;
+  --mono: var(--font-mono), "JetBrains Mono", ui-monospace, monospace;
 
   --ease: cubic-bezier(0.22, 0.61, 0.24, 1);
 }
@@ -539,10 +540,6 @@ main {
   height: 100%;
   object-fit: cover;
   display: block;
-}
-.sighting-shot-empty {
-  color: var(--sand-dim);
-  opacity: 0.7;
 }
 .sighting-text {
   margin-top: 1.3rem;

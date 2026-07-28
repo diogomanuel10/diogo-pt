@@ -12,7 +12,7 @@ export default function Work() {
     <section className="section wrap station" id="trabalhos">
       <Reveal>
         <div className="section-head">
-          <span className="mono">Paragem 2</span>
+          <span className="mono">Paragem 02</span>
           <h2>Trabalhos</h2>
           <p className="section-note mono">
             Seis avistamentos · seis animais
@@ -38,14 +38,12 @@ export default function Work() {
                 </h3>
                 <p className="sighting-line">{project.sighting}</p>
 
-                <figure className="sighting-shot">
-                  {project.shot ? (
-                    // eslint-disable-next-line @next/next/no-img-element
+                {project.shot && (
+                  <figure className="sighting-shot">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img src={project.shot} alt={`Captura de ${project.title}`} />
-                  ) : (
-                    <span className="sighting-shot-empty mono">Captura em breve</span>
-                  )}
-                </figure>
+                  </figure>
+                )}
 
                 {project.text.map((paragraph, p) => (
                   <p className="sighting-text" key={p}>
