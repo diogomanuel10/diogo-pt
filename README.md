@@ -52,9 +52,10 @@ embrulhar num `viewBox` escalado.
 
 ## Decisões que valem uma nota
 
-- **Fontes por `<link>`**, não `next/font`. Mais simples de trocar enquanto a
-  direção visual não está fechada. Quando estiver, passar para
-  `next/font/google` melhora o LCP.
+- **Fontes por `next/font/google`** (auto-hospedadas, sem `<link>` bloqueante e
+  sem layout shift). Cada família expõe uma custom property
+  (`--font-display`, `--font-body`, `--font-mono`) que os tokens de
+  `globals.css` consomem.
 - **CSS num ficheiro só.** É uma landing page; partir em CSS Modules agora era
   burocracia. Se crescer para várias rotas, partir por componente.
 - **Movimento concentrado.** A ousadia está toda no carro sobre o carril; o

@@ -11,7 +11,7 @@ export default function About() {
     <section className="section wrap station" id="sobre">
       <Reveal>
         <div className="section-head">
-          <span className="mono">Paragem 1</span>
+          <span className="mono">Paragem 01</span>
           <h2>Sobre</h2>
         </div>
       </Reveal>
