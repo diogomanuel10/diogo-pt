@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!--
+    Favicon: meia-quadra vista de cima com as seis posições.
+    A rede em cima, as 6 posições por baixo, uma em destaque (a bola).
+    Cores espelham os tokens de app/globals.css (--ink, --chalk, --line,
+    --chalk-dim, --leather). São valores de imagem, não de componente:
+    um SVG não lê custom properties do :root.
+  -->
+  <rect width="32" height="32" rx="7" fill="#05161c"/>
+  <!-- moldura da quadra -->
+  <rect x="6.5" y="6.5" width="19" height="19" rx="1.5" fill="none"
+        stroke="#e9f1ec" stroke-opacity="0.16" stroke-width="1"/>
+  <!-- rede, junto ao topo -->
+  <line x1="6.5" y1="10" x2="25.5" y2="10" stroke="#e9f1ec"
+        stroke-opacity="0.4" stroke-width="1"/>
+  <!-- fila da frente: 4 · 3 · 2 -->
+  <circle cx="11" cy="14.5" r="1.7" fill="#e9f1ec" fill-opacity="0.55"/>
+  <circle cx="16" cy="14.5" r="1.7" fill="#e9f1ec" fill-opacity="0.55"/>
+  <circle cx="21" cy="14.5" r="2.5" fill="#e9a93a"/>
+  <!-- fila de trás: 5 · 6 · 1 -->
+  <circle cx="11" cy="21" r="1.7" fill="#e9f1ec" fill-opacity="0.55"/>
+  <circle cx="16" cy="21" r="1.7" fill="#e9f1ec" fill-opacity="0.55"/>
+  <circle cx="21" cy="21" r="1.7" fill="#e9f1ec" fill-opacity="0.55"/>
+</svg>

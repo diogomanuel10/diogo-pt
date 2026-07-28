@@ -57,5 +57,5 @@ Abaixo dos 980px o campo passa a 2 colunas e abaixo de 640px a 1 — a rotação
 - [ ] Texto do "Sobre" na tua voz
 - [ ] Email verdadeiro em `components/Contact.tsx`
 - [ ] Imagens/capturas por projeto no detalhe
-- [ ] Favicon e imagem de Open Graph
+- [x] Favicon e imagem de Open Graph
 - [ ] Domínio

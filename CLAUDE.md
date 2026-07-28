@@ -64,7 +64,7 @@ Funciona ponta a ponta. O que falta:
 - [ ] Texto do "Sobre" na minha voz (o atual é provisório)
 - [ ] Email verdadeiro em `components/Contact.tsx`
 - [ ] Capturas de ecrã por projeto no detalhe
-- [ ] Favicon e imagem de Open Graph
+- [x] Favicon e imagem de Open Graph
 - [ ] Domínio
 
 ## Como quero trabalhar
