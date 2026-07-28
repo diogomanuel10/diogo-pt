@@ -70,7 +70,7 @@ Funciona ponta a ponta. O que falta:
 - [ ] Email verdadeiro em `components/Contact.tsx` (à espera do domínio)
 - [ ] Capturas de ecrã por projeto no avistamento
 - [x] Favicon e imagem de Open Graph (tema safari)
-- [ ] Afinar as silhuetas dos animais (algumas ainda são só aproximadas)
+- [x] Afinar as silhuetas dos animais
 - [ ] Domínio
 
 ## Como quero trabalhar

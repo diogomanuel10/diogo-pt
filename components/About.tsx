@@ -19,20 +19,20 @@ export default function About() {
       <div className="about-grid">
         <Reveal>
           <p>
-            Passo os dias a desenhar sistemas: bases de dados que aguentam anos
-            de histórico, processos que correm sozinhos, interfaces que não
-            obrigam ninguém a ler um manual.
+            Construo software que dura: bases de dados que aguentam anos de
+            histórico, processos que correm sozinhos, interfaces que ninguém
+            precisa de manual para usar.
           </p>
           <p>
-            Ao fim da tarde troco o teclado pelo pavilhão — treino voleibol e
-            coordeno formação de jovens. Ao fim de semana, é a estrada: gosto
-            de aventura e de andar por onde há animais. Foi desse lado, o que
-            vivo fora do ecrã, que veio a maior parte do que construí por conta
-            própria.
+            Fora do ecrã, treino voleibol e coordeno formação de jovens — e, ao
+            fim de semana, ponho-me a caminho: aventura, estrada, sítios onde há
+            animais. Quase tudo o que construí por conta própria nasceu daí, de
+            um problema que me chateou o suficiente na vida real para eu o
+            resolver em código.
           </p>
           <p>
-            É esse o método: perceber o problema por dentro antes de escrever a
-            primeira linha.
+            É sempre a mesma receita: viver o problema por dentro antes de
+            escrever a primeira linha.
           </p>
         </Reveal>
 
