@@ -327,7 +327,6 @@ main {
 }
 .hero-inner {
   position: relative;
-  width: 100%;
 }
 .eyebrow {
   display: flex;
@@ -347,9 +346,9 @@ main {
 .name {
   font-family: var(--display);
   font-weight: 800;
-  font-size: clamp(4.2rem, 17vw, 15rem);
-  line-height: 0.82;
-  letter-spacing: -0.04em;
+  font-size: clamp(3rem, 8vw, 6rem);
+  line-height: 0.9;
+  letter-spacing: -0.03em;
   display: flex;
   flex-wrap: wrap;
   text-shadow: 0 6px 30px rgba(0, 0, 0, 0.35);
@@ -508,9 +507,9 @@ main {
 .sighting-title {
   font-family: var(--display);
   font-weight: 700;
-  font-size: clamp(1.6rem, 4vw, 2.6rem);
+  font-size: clamp(1.5rem, 3vw, 2.1rem);
   letter-spacing: -0.02em;
-  line-height: 1;
+  line-height: 1.05;
 }
 .sighting-line {
   margin-top: 0.8rem;
@@ -587,10 +586,10 @@ main {
    ============================================================ */
 .contact-call {
   font-family: var(--display);
-  font-weight: 800;
-  font-size: clamp(2.2rem, 8vw, 6rem);
-  line-height: 0.95;
-  letter-spacing: -0.03em;
+  font-weight: 700;
+  font-size: clamp(1.7rem, 4.4vw, 3rem);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
 }
 .contact a.big {
   color: var(--savanna-soft);
