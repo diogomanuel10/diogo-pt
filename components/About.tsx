@@ -8,10 +8,10 @@ const FACTS = [
 
 export default function About() {
   return (
-    <section className="section wrap" id="sobre">
+    <section className="section wrap station" id="sobre">
       <Reveal>
         <div className="section-head">
-          <span className="mono">01</span>
+          <span className="mono">Paragem 1</span>
           <h2>Sobre</h2>
         </div>
       </Reveal>
@@ -24,11 +24,11 @@ export default function About() {
             obrigam ninguém a ler um manual.
           </p>
           <p>
-            Ao fim da tarde troco o teclado pelo pavilhão. Treino voleibol e
-            coordeno formação de jovens — e foi daí que veio a maior parte do
-            que construí por conta própria. Quando uma coisa me irrita o
-            suficiente durante uma época inteira, acabo por a resolver em
-            código.
+            Ao fim da tarde troco o teclado pelo pavilhão — treino voleibol e
+            coordeno formação de jovens. Ao fim de semana, é a estrada: gosto
+            de aventura e de andar por onde há animais. Foi desse lado, o que
+            vivo fora do ecrã, que veio a maior parte do que construí por conta
+            própria.
           </p>
           <p>
             É esse o método: perceber o problema por dentro antes de escrever a
