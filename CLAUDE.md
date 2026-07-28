@@ -1,7 +1,8 @@
 # Contexto do projeto
 
-Site pessoal do Diogo. Programador há 12 anos e treinador de voleibol.
-Serve para potenciais clientes perceberem quem sou e o que já construí.
+Site pessoal do Diogo. Programador há 12 anos, treinador de voleibol e amante
+de aventura. Serve para potenciais clientes perceberem quem sou e o que já
+construí.
 
 ## Regra inegociável
 
@@ -12,43 +13,47 @@ descrito sem nomear alguém, fica de fora.
 
 ## A ideia do design
 
-A diferença deste site não é ser bonito — é a navegação usar as regras do
-voleibol.
+A diferença deste site não é ser bonito — é a navegação ser um **passeio de
+montanha-russa por um safari**.
 
-Os seis projetos ocupam as seis posições de um campo:
+A página é uma viagem por um carril. À medida que se rola, o **carro percorre a
+linha** através da savana e para em **estações**: Início, Sobre, Trabalhos e
+Contacto. Os seis projetos são **seis avistamentos**, cada um com o seu animal.
 
-- fila da frente, junto à rede: **4 · 3 · 2**
-- fila de trás: **5 · 6 · 1**
-- rotação: `4 → 3 → 2 → 1 → 6 → 5 → 4`
-
-Carregar em "Rodar", ou saltar de projeto para projeto no detalhe, roda o campo
-a sério — os cartões deslizam pelo perímetro na direção correta. É a assinatura
-do site e a razão de ele existir.
-
-Por isso os números não são decoração. São informação verdadeira. Não os
-substituir por `01 / 02 / 03`.
+Os **atalhos no topo** (Início · Sobre · Trabalhos · Contacto) são a saída
+expresso: saltam a página para qualquer estação — e, como isso rola a página, o
+carro anda mesmo até lá. O carril e o carro são a assinatura do site e a razão
+de ele existir.
 
 ## Regras de manutenção
 
-**Não converter os cartões para CSS grid.** Estão posicionados por `transform`
-absoluto de propósito: `grid-area` não é animável e a transição desaparecia.
+**Não partir a mecânica do carril.** O carro segue o carril com CSS
+`offset-path` (motion path). O SVG do carril é dimensionado **1:1 aos pixéis da
+viewport** (sem escala de `viewBox`) precisamente para que o desenho da linha e
+o `offset-path` do carro coincidam ao pixel. Não embrulhar o carril num
+`viewBox` escalado — o carro deixaria de assentar na linha.
 
-**Movimento concentrado.** A ousadia está toda na rotação. Tudo à volta é
-revelação simples no scroll. Não acrescentar parallax, partículas, cursores
-personalizados ou animações de hover elaboradas sem eu pedir — animação
-espalhada por tudo cancela-se e faz o site parecer gerado.
+**Movimento concentrado.** A ousadia está toda no passeio (o carro no carril).
+O cenário do safari é fixo e imóvel; as secções revelam-se de forma simples no
+scroll. Não acrescentar parallax, partículas, cursores personalizados ou
+animações de hover elaboradas sem eu pedir — animação espalhada por tudo
+cancela-se e faz o site parecer gerado.
 
 **Tokens no `:root` de `app/globals.css`.** Todas as cores e fontes derivam de
-lá. Nunca escrever um hex diretamente num componente.
+lá. Nunca escrever um hex diretamente num componente. Exceção inevitável: os
+ficheiros de imagem (favicon `app/icon.svg`, apple-icon, imagem OG) têm de
+trazer os valores literais — um SVG/PNG não lê custom properties. Aí, espelhar
+os tokens e dizê-lo em comentário.
 
 **Conteúdo em `lib/projects.ts`.** Fonte de verdade única. A ordem do array
-define a posição inicial no campo.
+define a ordem das paragens ao longo do carril. Cada projeto tem um `animal`
+(o avistamento) — os silhuetas vivem em `components/Animal.tsx`.
 
 ## Chão de qualidade
 
-Responsivo até mobile, `prefers-reduced-motion` respeitado, foco de teclado
-visível, detalhe navegável com `←` `→` e fechável com `Esc`. Manter isto em
-qualquer alteração.
+Responsivo até mobile, `prefers-reduced-motion` respeitado (o carro segue o
+scroll sem transição extra), foco de teclado visível, navegação entre estações
+com `←` `→` e `Esc` para o topo. Manter isto em qualquer alteração.
 
 ## Stack
 
@@ -62,9 +67,10 @@ tipos.
 Funciona ponta a ponta. O que falta:
 
 - [ ] Texto do "Sobre" na minha voz (o atual é provisório)
-- [ ] Email verdadeiro em `components/Contact.tsx`
-- [ ] Capturas de ecrã por projeto no detalhe
-- [x] Favicon e imagem de Open Graph
+- [ ] Email verdadeiro em `components/Contact.tsx` (à espera do domínio)
+- [ ] Capturas de ecrã por projeto no avistamento
+- [x] Favicon e imagem de Open Graph (tema safari)
+- [ ] Afinar as silhuetas dos animais (algumas ainda são só aproximadas)
 - [ ] Domínio
 
 ## Como quero trabalhar

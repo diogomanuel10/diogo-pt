@@ -3,16 +3,16 @@ import Reveal from "./Reveal";
 export default function Contact() {
   return (
     <>
-      <section className="section wrap contact" id="contacto">
+      <section className="section wrap contact station" id="contacto">
         <Reveal>
           <div className="section-head">
-            <span className="mono">03</span>
+            <span className="mono">Fim da linha</span>
             <h2>Contacto</h2>
           </div>
         </Reveal>
 
         <Reveal>
-          <h2>
+          <h2 className="contact-call">
             Tens um problema
             <br />
             que vale a pena

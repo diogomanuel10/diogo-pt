@@ -13,13 +13,13 @@ const siteUrl = process.env.VERCEL_PROJECT_PRODUCTION_URL
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Diogo — Programador & Treinador",
+  title: "Diogo — Programador & Aventureiro",
   description:
-    "Há 12 anos que construo software. Os projetos de que mais me orgulho nasceram de problemas que vivo todas as semanas.",
+    "Há 12 anos que construo software. Um passeio por seis projetos que nasceram de problemas reais — cada um com o seu avistamento.",
   openGraph: {
-    title: "Diogo — Programador & Treinador",
+    title: "Diogo — Programador & Aventureiro",
     description:
-      "Seis projetos, seis posições. Plataformas, produtos e sites construídos de raiz.",
+      "Uma montanha-russa por um safari de seis projetos. Plataformas, produtos e sites construídos de raiz.",
     locale: "pt_PT",
     type: "website",
   },
