@@ -519,8 +519,34 @@ main {
   font-style: italic;
   max-width: 48ch;
 }
+.sighting-shot {
+  margin-top: 1.3rem;
+  max-width: 560px;
+  aspect-ratio: 16 / 9;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  overflow: hidden;
+  background: linear-gradient(
+    135deg,
+    rgba(214, 138, 52, 0.1),
+    rgba(20, 16, 10, 0.4)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sighting-shot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.sighting-shot-empty {
+  color: var(--sand-dim);
+  opacity: 0.7;
+}
 .sighting-text {
-  margin-top: 0.9rem;
+  margin-top: 1.3rem;
   max-width: 54ch;
   color: var(--sand-dim);
 }
